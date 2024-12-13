@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (C) Nemirtingas
  * This file is part of the ingame overlay project
  *
@@ -795,7 +795,7 @@ std::weak_ptr<uint64_t> DX12Hook_t::CreateImageResource(const void* image_data, 
     };
     
     Texture_t* pTextureData = new Texture_t;
-    pTextureData->GpuHandle = shaderRessourceView.GpuHandle.ptr;
+    pTextureData->GpuHandle = (ImTextureID)shaderRessourceView.GpuHandle.ptr;
     pTextureData->pTexture = pTexture;
     pTextureData->Id = shaderRessourceView.Id;
     
